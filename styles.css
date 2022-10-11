@@ -98,7 +98,7 @@ text-align: left;
 header,
 #hero {
 
-  width: 80vw;
+  width: 86vw;
   border: 2px dashed aqua;
 }
 
@@ -114,6 +114,7 @@ header,
   font-size: 15px;
   font-weight: 100;
   letter-spacing: 4px;
+  padding-left: 15px;
 
 }
 
@@ -159,20 +160,15 @@ header,
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0;
     color: #000000;
     font-family: sofia-pro, sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    font-weight: 600;
-    padding: 0;
-    white-space: nowrap;
-    transition: 0.3s;
-    letter-spacing: 0.4px;
-    position: relative;
+    font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 3px;
     font-size: 14px;
+    white-space: nowrap;
 
   }
 
@@ -477,25 +473,26 @@ header,
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
+    width: 100%;
+    background-color: transparent;
     border: 2px dashed red;
 
 }
 
 #hero-big-text {
 
-  width: 100%;
+  width: 75%;
   padding: 5px;
   font-size: 50px;
   font-weight: 700;
-  border: 2px dashed green;
   line-height: 70px;
-
+  border: 2px dashed green;
 
 }
 
 #half-hero {
 
-    width: 75%;
+    width: 86vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -514,9 +511,16 @@ header,
 
 }
 
-#half-hero-split div{
+#half-hero-split div.lg{
 
-  width: 45%;
+  width: 60%;
+  border: 2px dashed orange;
+
+}
+
+#half-hero-split div.sm{
+
+  width: 30%;
   border: 2px dashed orange;
 
 }
@@ -539,7 +543,7 @@ header,
 
   background-color: #586F6B;
   color: #FFFFFF;
-  box-shadow: 10px 10px #000000;
+  box-shadow: 5px 5px #000000;
 
 }
 
@@ -586,5 +590,31 @@ header,
 
     visibility: visible;
     opacity: 1;
+
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+footer {
+
+  text-align: center;
+  background: #906759;
+  padding: 3px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+footer .copyright {
+
+  background: #906759;
+
+}
+
+footer .credits {
+
+  background: #906759;
 
 }
