@@ -14,6 +14,7 @@
 body {
 
     margin: 0;
+    background-color: transparent;
 }
 
 .justify-content-between {
@@ -39,8 +40,9 @@ h1 a {
 h2 {
 
     font-family: gravesend-sans, sans-serif;
-    font-weight: 300;
+    font-weight: 400;
     font-style: normal;
+    text-transform: uppercase;
 
 } 
 
@@ -48,13 +50,12 @@ h2 {
 
   right: 0;
   top: 0;
-  width: 150px;
+  width: 100%;
   height: 70vh;
   background-color: #586F6B;
   position: absolute;
   margin: 0;
   padding: 0;
-  z-index: 0;
 
 }
 
@@ -63,6 +64,56 @@ i {
     font-size: 20px; 
     color: #000000;
     background-color: transparent;
+
+}
+
+.align-left{
+
+text-align: left;
+
+}
+
+.align-right{
+
+  text-align: right;
+  
+}
+
+.top-layer {
+
+  z-index: 1;
+
+}
+
+.bottom-layer {
+
+  z-index: -2;
+
+}
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+
+header,
+#hero {
+
+  width: 80vw;
+  border: 2px dashed aqua;
+}
+
+#header a {
+
+  text-decoration: none;
+  font-weight: 300;
+
+}
+
+.logo {
+
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: 4px;
 
 }
 
@@ -76,8 +127,6 @@ i {
 
     margin-right: 150px;  
     padding: 0;
-    z-index: 1;
-    background-color: transparent;
 
   }
 
@@ -110,7 +159,9 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #D6ADBC; 
+    color: #000000;
+    font-family: sofia-pro, sans-serif;
+    font-weight: 400;
     font-size: 18px;
     font-weight: 600;
     padding: 0;
@@ -119,6 +170,9 @@ i {
     letter-spacing: 0.4px;
     position: relative;
     text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 14px;
 
   }
 
@@ -158,7 +212,7 @@ i {
   .navbar .active:focus, 
   .navbar li:hover > a {
 
-    color: #D6ADBC; 
+    color: #906759; 
 
   }
 
@@ -189,7 +243,7 @@ i {
     padding: 10px 20px;
     font-size: 18px;
     text-transform: none;
-    color: #906759;
+    color: #000000;
 
   }
 
@@ -203,7 +257,7 @@ i {
   .navbar .dropdown ul .active:hover, 
   .navbar .dropdown ul li:hover > a {
 
-    color: #0078ff;
+    color: #906759; ;
 
   }
 
@@ -253,7 +307,7 @@ i {
   */
   .mobile-nav-toggle {
 
-    color: #fff;
+    color: #906759; ;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -287,7 +341,7 @@ i {
     bottom: 0;
     background: rgba(78, 78, 78, 0.9);
     transition: 0.3s;
-    z-index: 999;
+    z-index: 99;
 
   }
 
@@ -308,7 +362,7 @@ i {
     bottom: 15px;
     left: 15px;
     padding: 10px 0;
-    background-color: #fff;
+    background-color: #7F9183;
     overflow-y: auto;
     transition: 0.3s;
 
@@ -333,7 +387,7 @@ i {
 
     padding: 10px 20px;
     font-size: 15px;
-    color: #4e4e4e;
+    color: #000000;
 
   }
 
@@ -341,7 +395,7 @@ i {
   .navbar-mobile .active, 
   .navbar-mobile li:hover > a {
 
-    color: #0078ff;
+    color: #906759;
 
   }
 
@@ -361,7 +415,7 @@ i {
     z-index: 99;
     opacity: 1;
     visibility: visible;
-    background: #fff;
+    background: #7f9183;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 
   }
@@ -388,7 +442,7 @@ i {
   .navbar-mobile .dropdown ul .active:hover, 
   .navbar-mobile .dropdown ul li:hover > a {
     
-    color: #0078ff;
+    color: #906759;
 
   }
 
@@ -402,30 +456,68 @@ i {
 # Hero area
 --------------------------------------------------------------*/
 
-.hero-image {
+#hero-image {
 
     height: 45vh;
-    z-index: 1;
+    overflow: visible;
+    border: blue dashed 2px;
+
 }
 
-div#hero {
+#hero-image img {
 
-    height: calc(100vh - 10vh);
+  height: 100%;
+
+}
+
+#hero {
+
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
-    border: 1px dashed red;
+    border: 2px dashed red;
 
 }
 
-div#half-hero {
+#hero-big-text {
 
-    width: 75vh;
+  width: 100%;
+  padding: 5px;
+  font-size: 50px;
+  font-weight: 700;
+  border: 2px dashed green;
+  line-height: 70px;
+
+
+}
+
+#half-hero {
+
+    width: 75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    border: 2px dashed purple;
+
+}
+
+#half-hero-split{
+
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+#half-hero-split div{
+
+  width: 45%;
+  border: 2px dashed orange;
 
 }
 
@@ -439,6 +531,15 @@ div#half-hero {
     border: none;
     font-weight: 700;
     letter-spacing: 2px;
+    text-transform: uppercase;
+
+}
+
+.call-to-action:hover {
+
+  background-color: #586F6B;
+  color: #FFFFFF;
+  box-shadow: 10px 10px #000000;
 
 }
 
@@ -457,7 +558,7 @@ div#half-hero {
     opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 996;
+    z-index: 99;
     background: #0078ff;
     width: 40px;
     height: 40px;
