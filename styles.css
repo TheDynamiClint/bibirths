@@ -489,6 +489,7 @@ header,
   flex-direction: row;
   flex-wrap: wrap;
   padding-right: 50px;
+  padding-top: 38px;
   /*border: black solid 2px;*/
 
 }
@@ -714,3 +715,95 @@ footer .credits {
 /*--------------------------------------------------------------
 # Breakpoint resizing
 --------------------------------------------------------------*/
+
+/* Small devices (landscape phones, 576px and up to
+X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 150px) and (max-width: 1200px) { 
+
+  #header,
+  #hero,
+  #hero-top,
+  #hero-big-text,
+  #half-hero-split,
+  #hero-row-three,
+  #light-bar {
+    
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+
+  }
+
+  
+  .sm, .lg, #hero-image {
+
+    width: 60%;
+
+  }
+
+  body {
+
+    margin: 50px 0px;
+
+
+  }
+
+
+
+
+
+
+}
+
+/*--------------------------------------------------------------
+# Load Screen
+--------------------------------------------------------------*/
+
+#load-screen {
+
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: #D6ADBC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+}
+
+#load-screen h1{
+
+  font-family: moonblossom, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 5vw;
+  text-transform: uppercase;
+  letter-spacing: 3vw;
+  color: #834834;
+  margin-top: 0px;
+  background-color: transparent;
+
+}
+
+#load-screen img {
+
+  z-index: 100;
+  height: 50vh;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #000000;
+
+}
+
+#stripe {
+
+  background-color: #FDE5F3;
+  height: 200px;
+  width: 100%;
+  z-index: 99;
+  box-shadow: 1px 1px 3px #000000;
+  position: absolute;
+
+}
