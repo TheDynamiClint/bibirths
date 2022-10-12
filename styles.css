@@ -51,7 +51,8 @@ h2 {
   right: 0;
   top: 0;
   width: 100%;
-  height: 70vh;
+  height: 50vh;
+  min-height: 300px;
   background-color: #586F6B;
   position: absolute;
   margin: 0;
@@ -99,7 +100,7 @@ header,
 #hero {
 
   width: 86vw;
-  border: 2px dashed aqua;
+  /*border: 2px dashed aqua;*/
 }
 
 #header a {
@@ -126,7 +127,7 @@ header,
 */
 .navbar {
 
-    margin-right: 150px;  
+    margin-right: 150px;
     padding: 0;
 
   }
@@ -282,7 +283,7 @@ header,
 
   }
 
-  @media (max-width: 1366px) {
+  @media (max-width: 1400px) {
 
     .navbar .dropdown .dropdown ul {
 
@@ -312,7 +313,7 @@ header,
 
   }
   
-  @media (max-width: 991px) {
+  @media (max-width: 992px) {
 
     .mobile-nav-toggle {
 
@@ -456,7 +457,7 @@ header,
 
     width: 21.5vw;
     min-width: 200px;
-    border: blue dashed 2px;
+    /*border: blue dashed 2px;*/
     
 }
 
@@ -464,20 +465,19 @@ header,
 
   height: 90%;
   margin: 0;
-  background-color: transparent;
   
 }
 
 #hero {
 
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
-    background-color: transparent;
-    border: 2px dashed red;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  background-color: transparent;
+  /*border: 2px dashed red;*/
 
 }
 
@@ -489,7 +489,7 @@ header,
   flex-direction: row;
   flex-wrap: wrap;
   padding-right: 50px;
-  border: black solid 2px;
+  /*border: black solid 2px;*/
 
 }
 
@@ -498,7 +498,7 @@ header,
   width: 57.4vw;
   min-width: 300px;
   padding: 0px 25px 0px 60px;
-  border: 2px dashed green;
+  /*border: 2px dashed green;*/
 
 }
 
@@ -515,7 +515,7 @@ header,
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: 2px dashed purple;
+    /*border: 2px dashed purple;*/
 
 }
 
@@ -526,20 +526,20 @@ header,
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  border: 2px solid magenta;
+  /*border: 2px solid magenta;*/
 
 }
 
 #half-hero-split div.lg{
 
   width: 60%;
-  border: 2px dashed orange;
+  /*border: 2px dashed orange;*/
 
 }
 
 #half-hero-split div.sm{
 
-  border: 2px dashed orange;
+   /*border: 2px dashed orange;*/
 
 }
 
@@ -570,16 +570,18 @@ header,
     border-radius: 150px 5px 5px 5px;
 }
 
-div.hero-row-three {
+.hero-row-three {
 
-  width: 100vw;
+  width: calc(21.5vw + 65.6vw);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  border: 2px dashed salmon;
+  justify-content: center;
+  background-color: transparent;
+  overflow: visible;
+  /*border: 2px dashed salmon;*/
 
 }
-
 
 #light-bar {
 
@@ -588,14 +590,20 @@ div.hero-row-three {
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  width: 100%;
-  min-height: 75px;
+  width: 62%;
+  min-height: 5px;
   background-color: #FEE7F7;
   border-radius: 50px;
-  margin: 20px;
   padding: 0px 50px;
   box-shadow: 1px 1px 2px #000000;
   overflow: visible;
+
+}
+
+div#light-bar {
+
+  min-height: 75px;
+  margin-top: -100px;
 
 }
 
@@ -610,6 +618,25 @@ div.hero-row-three {
   font-weight: 700;
   font-style: normal;
   letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+
+#service-hl {
+
+  background: transparent;
+
+}
+
+#service-hl li{
+
+  display: inline-block;
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 12px;
 
 }
 
@@ -683,3 +710,7 @@ footer .credits {
   background: #906759;
 
 }
+
+/*--------------------------------------------------------------
+# Breakpoint resizing
+--------------------------------------------------------------*/
