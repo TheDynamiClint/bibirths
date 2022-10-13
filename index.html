@@ -17,41 +17,51 @@
 
 <body>
 
-   <!-- <div id="load-screen" class="load-screen">
+   <div id="load-screen" class="load-screen">
         
         <h1 class="load-screen">Big Island Births</h1>
         <img class="load-screen" src="assets/images/bibirths_logo.svg" alt="Big Island Births logo"/>
         <div id="stripe" class="load-screen"></div>
 
-    </div>-->
+    </div>
 
     <div id="top-decorative" class="bottom-layer d-none d-lg-block"></div>
 
     <!-- ======= Header ======= -->
-    <header id="header" class="fixed-top">
+    <header id="header" class="header">
         
-        <div class="top-layer d-flex align-items-center justify-content-between">
+        <div id="nav-wrapper" class="top-layer">
 
-            <h1 class="logo top-layer"><a href="index.html">Big Island Births</a></h1>
+            <div>
 
-            <nav id="navbar" class="navbar top-layer">
-                
-                <ul>
-                    <li><a class="nav-link scrollto" href="#hero">Option1</a></li>
-                    <li><a class="nav-link scrollto" href="#about">Option2</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Option3</a></li>
-                    <li><a class="nav-link scrollto" href="#work">Option4</a></li>
-                </ul>
+                <h1 class="logo top-layer"><a href="index.html">Big Island Births</a></h1>
+            
+            </div>
 
-                <i class="bi-list mobile-nav-toggle"></i>
+            <div>
 
-            </nav>
+                <nav id="navbar" class="navbar top-layer">
+                    
+                    <ul>
+                        <li><a class="nav-link scrollto active" href="#hero">Option1</a></li>
+                        <li><a class="nav-link scrollto" href="#about">Option2</a></li>
+                        <li><a class="nav-link scrollto" href="#services">Option3</a></li>
+                        <li><a class="nav-link scrollto" href="#work">Option4</a></li>
+                    </ul>
+
+                    <div id="menu-toggle">
+                        <i class="bi-list mobile-nav-toggle"></i>
+                    </div>
+
+                </nav>
+
+            </div>
 
         </div>
 
     </header>
     <!-- End  Header -->
-
+    <!-- ======= Hero ======= -->
     <div id="hero">
 
         <div id="hero-top">
@@ -96,17 +106,21 @@
             <div class="hero-row-three top-layer container">
 
                 <div id="light-bar">
-
-                    Services:
+                    
+                    <h3>Services:</h3>
 
                     <div id="service-hl">
 
                         <ul>
 
                             <li>Doula</li>
+
                             <i class="bi-dot"></i>
+
                             <li>Placenta Encapsulation</li>
+
                             <i class="bi-dot"></i>
+
                             <li>Nutrition Consulting</li>
                         
                         </ul>
@@ -120,9 +134,14 @@
         </div>
     
     </div>
+    <!-- End  Hero -->
+    <!-- ======= About ======= -->
 
+    <div class="container" id="about"></div>
+
+    <!-- End  About -->
     <!-- ======= Footer ======= -->
-    <footer class="top-layer">
+    <footer class="top-laye footer">
 
             <div class="copyright-box">
 
@@ -141,7 +160,7 @@
     <!-- End  Footer -->
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="screen_time.js"></script>
+    <script src="main.js"></script>
 
 </body>
 
