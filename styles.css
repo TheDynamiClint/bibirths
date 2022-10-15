@@ -918,7 +918,7 @@ X-Large devices (large desktops, 1200px and up)*/
 
 }
 
-#load-screen h1{
+#load-screen div#title{
 
   font-family: moonblossom, sans-serif;
   font-weight: 300;
