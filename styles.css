@@ -11,6 +11,30 @@
 
 }
 
+.dark-color-bg {
+
+  /*background-color: #906759;*/
+  background: rgb(78,68,56);
+  background: linear-gradient(180deg, rgba(78,68,56,1) 0%, rgba(144,103,89,0.8) 35%, rgba(144,103,89,0.5) 80%, rgba(252,238,227,1) 100%);
+
+}
+
+.med-color-bg {
+
+  /*background-color: #CFC0BD;*/
+  background: rgb(207,192,189);
+  background: linear-gradient(180deg, rgba(207,192,189,1) 0%, rgba(221,213,208,1) 35%, rgba(221,213,208,0.8) 80%, rgba(252,238,227,1) 100%);
+}
+
+.light-color-bg {
+
+  /*background-color: #FEE7F7;*/
+  background: rgb(254,231,247);
+  background: linear-gradient(180deg, rgba(254,231,247,1) 0%, rgba(254,231,247,0.8) 35%, rgba(254,231,247,0.5) 80%, rgba(252,238,227,1) 100%);
+
+}
+
+
 body {
 
     margin: 0;
@@ -151,7 +175,6 @@ text-align: left;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    /*z-index: 2;*/
     /*border: #000000 solid 2px;*/
 
   }
@@ -245,7 +268,6 @@ text-align: left;
     top: calc(100% + 30px);
     margin: 0;
     padding: 10px 0;
-    /*z-index: 2;*/
     opacity: 0;
     visibility: hidden;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
@@ -540,16 +562,16 @@ text-align: left;
 
   width: 57.4vw;
   min-width: 300px;
-  padding: 50px 25px 0px 60px;
+  padding: 50px 25px 80px 60px;
   /*border: 2px dashed green;*/
 
 }
 
 #hero-big-text h2{
 
-  font-size: 4vw;
+  font-size: calc(40px + 2vw);
   font-weight: 300;
-  line-height: calc(4vw * 1.1);
+  line-height: calc(40px * 0.5vw);
 
 }
 
@@ -613,19 +635,6 @@ text-align: left;
     border-radius: 150px 5px 5px 5px;
 }
 
-/*.hero-row-three {
-
-  width: calc(21.5vw + 65.6vw);
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: transparent;
-  overflow: visible;
-  border: 2px dashed salmon;
-
-}*/
-
 #light-bar {
 
   display: flex;
@@ -634,8 +643,8 @@ text-align: left;
   justify-content: center;
   align-items: center;
   width: 62%;
-  min-height: 75px;
-  margin-top: -80px;
+  min-height: 80px;
+  margin-top: -50px;
   margin-left: 30px;
   background-color: #FEE7F7;
   border-radius: 50px;
@@ -834,18 +843,6 @@ X-Large devices (large desktops, 1200px and up)*/
     width: 250px;
 
   }
-
-  /*.hero-row-three {
-
-    width: 200px;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-
-  }*/
 
   #light-bar {
     
