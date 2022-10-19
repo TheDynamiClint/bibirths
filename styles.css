@@ -110,9 +110,6 @@ text-align: left;
 
 }
 
-
-#about {height: 500px;}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -356,6 +353,7 @@ text-align: left;
     display: none;
     line-height: 0;
     transition: 0.5s;
+    z-index: 6;
 
   }
   
@@ -370,6 +368,7 @@ text-align: left;
     .navbar ul {
 
       display: none;
+      box-shadow: 1px 1px 2px #000000;
 
     }
 
@@ -402,7 +401,6 @@ text-align: left;
     bottom: 0;
     background: #FEE7F7;
     transition: 0.3s;
-    z-index: 4;
 
   }
 
@@ -411,6 +409,7 @@ text-align: left;
     position: absolute;
     top: 15px;
     right: 15px;
+    z-index: 99;
 
   }
 
@@ -474,18 +473,18 @@ text-align: left;
     display: none;
     margin: 10px 20px;
     padding: 10px 0;
-    z-index: 4;
     opacity: 1;
     visibility: visible;
     background: #7f9183;
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    z-index: 99;
 
   }
 
   .navbar-mobile .dropdown ul li {
 
     min-width: 200px;
-
+  
   }
 
   .navbar-mobile .dropdown ul a {
@@ -530,6 +529,7 @@ text-align: left;
 
   height: 110%;
   margin: 0;
+  max-height: 75vh;
   
 }
 
@@ -643,13 +643,14 @@ text-align: left;
   justify-content: center;
   align-items: center;
   width: 62%;
-  min-height: 80px;
+  min-height: 85px;
   margin-top: -50px;
   margin-left: 30px;
+  margin-bottom: -50px;
   background-color: #FEE7F7;
   border-radius: 50px;
   overflow: hidden;
-  z-index: 3;
+  z-index: 2;
   box-shadow: 1px 1px 2px #000000;
 
 }
@@ -856,6 +857,7 @@ X-Large devices (large desktops, 1200px and up)*/
     align-items: center;
     border-radius: 100px;
     position: absolute;
+    z-index: 3;
   
   }
 
@@ -923,7 +925,7 @@ X-Large devices (large desktops, 1200px and up)*/
   font-size: 5vw;
   text-transform: uppercase;
   letter-spacing: 3vw;
-  color: #834834;
+  color: #623729;
   margin-top: 0px;
   background-color: transparent;
 
