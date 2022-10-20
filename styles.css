@@ -368,7 +368,7 @@ text-align: left;
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 76px) {
 
   .mobile-nav-toggle {
 
@@ -550,9 +550,8 @@ text-align: left;
 
 #hero-image img{
 
-height: 110%;
-margin: 0;
-max-height: 75vh;
+height: 75%;
+width: auto;
 
 }
 
