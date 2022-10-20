@@ -85,7 +85,7 @@ h2 {
 
 i {
 
-    font-size: 20px; 
+    /*font-size: 20px; */
     color: #000000;
     background-color: transparent;
 
@@ -368,7 +368,7 @@ text-align: left;
 
 }
 
-@media (max-width: 76px) {
+@media (max-width: 768px) {
 
   .mobile-nav-toggle {
 
@@ -550,8 +550,9 @@ text-align: left;
 
 #hero-image img{
 
-height: 75%;
+height: 110%;
 width: auto;
+max-height: 550px;
 
 }
 
@@ -652,6 +653,13 @@ color: #FFFFFF;
 
 }
 
+i.bi-arrow-down-right {
+
+font-size: 20px;
+padding-left: 10px;
+
+}
+
 .l-top-rounded {
 
   border-radius: 150px 5px 5px 5px;
@@ -664,7 +672,9 @@ flex-direction: row;
 flex-wrap: wrap;
 justify-content: center;
 align-items: center;
-width: 62%;
+/*width: 62%;*/
+width: 80%;
+min-width: 780px;
 min-height: 85px;
 margin-top: -50px;
 margin-left: 30px;
@@ -696,7 +706,7 @@ font-family: gravesend-sans, sans-serif;
 font-weight: 700;
 font-style: normal;
 letter-spacing: 2px;
-font-size: 10px;
+font-size: 14px;
 text-transform: uppercase;
 
 }
@@ -712,10 +722,10 @@ margin: 0;
 
 }
 
-i {
+i.bi-dot {
 
 padding-bottom: 0.7px;
-padding-left: 0.5px;
+padding-left: 5px;
 margin: 0;
 
 }
@@ -730,8 +740,8 @@ background: transparent;
 
 display: inline-block;
 list-style-type: none;
-font-weight: 300;
 font-size: 12px;
+margin-bottom: 5px;
 
 }
 
@@ -863,10 +873,12 @@ body {
 
 #light-bar {
   
-  width: 200px;
-  height: 35vh;
+  width: 40vw;
+  height: 40vh;
+  max-width: 180px;
+  min-width: 144px;
   padding: 0;
-  margin: -255px 15px 0px 0px;
+  margin: -300px 15px 0px 0px;
   right: 0;
   display: flex;
   justify-content: center;
