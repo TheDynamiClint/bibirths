@@ -125,21 +125,17 @@ text-align: left;
 
 }
 
-.left-points {
-
-  border-radius: 0px 0px 0px 0px;
-
-}
-
-.right-points {
-
-  border-radius: 0px 0px 0px 0px;
-
-}
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+#header {
+
+  position: fixed;
+  top: 0;
+  z-index: 99;
+
+}
 
 #header,
 .top-layer,
@@ -180,7 +176,7 @@ text-align: left;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  width: 60%;
+  width: 100%;
   /*border: #0078ff dashed 2px;*/
 
 }
@@ -585,6 +581,13 @@ background-color: transparent;
 
 }
 
+div#hero.main {
+
+margin-bottom: 77px;
+margin-top: 50px;
+
+}
+
 #alyx {
 
 width: 100vw;
@@ -894,14 +897,14 @@ body {
   max-width: 180px;
   min-width: 144px;
   padding: 0;
-  margin: -300px 15px 0px 0px;
-  right: 0;
+  margin-top: -300px;
+  left: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 100px;
   position: absolute;
-  z-index: 0;
+  z-index: 1;
 
 }
 
@@ -941,7 +944,44 @@ body {
 
 }
 
+div#hero.main {
+
+  margin-bottom: 0px;
+  
+  }
+
 }
+
+/*--------------------------------------------------------------
+# Services Section
+--------------------------------------------------------------*/
+
+.card,
+.card-body,
+.card-text,
+#services .row, 
+#services .col-sm-4 {
+
+background-color: transparent;
+border: none;
+
+} 
+
+img.left-points {
+
+  border-radius: 100px 0px 100px 0px;
+  box-shadow: 1px 1px 2px #000000; 
+
+}
+
+img.right-points {
+
+  border-radius: 0px 100px 0px 100px;
+  box-shadow: 1px 1px 2px #000000;
+
+}
+
+
 
 /*--------------------------------------------------------------
 # Load Screen
