@@ -132,6 +132,7 @@ text-align: left;
 #header {
 
   position: fixed;
+  width: calc(20.4vw + 57.5vw);
   top: 0;
   z-index: 99;
 
@@ -145,7 +146,6 @@ text-align: left;
   align-items: center;
   justify-content: space-between;
   flex-wrap: nowrap;
-  z-index: 3;
   /*border: 2px dashed aqua;*/
 
 }
@@ -176,7 +176,6 @@ text-align: left;
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  width: 100%;
   /*border: #0078ff dashed 2px;*/
 
 }
@@ -187,14 +186,14 @@ text-align: left;
 /**
 * Desktop Navigation 
 */
+
 .navbar {
 
-    margin-right: 150px;
-    width: 100%;
-    padding: 10px;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 0px 50px;
     /*border: #000000 solid 2px;*/
 
   }
@@ -564,7 +563,7 @@ text-align: left;
 
 height: 110%;
 width: auto;
-max-height: 550px;
+max-height: 546px;
 
 }
 
@@ -584,7 +583,7 @@ background-color: transparent;
 div#hero.main {
 
 margin-bottom: 77px;
-margin-top: 50px;
+margin-top: 38px;
 
 }
 
@@ -604,7 +603,7 @@ padding-right: 50px;
 
 width: 57.4vw;
 min-width: 300px;
-padding: 50px 25px 80px 60px;
+padding: 50px 25px 107px 60px;
 /*border: 2px dashed green;*/
 
 }
@@ -614,6 +613,7 @@ padding: 50px 25px 80px 60px;
 font-size: calc(40px + 2vw);
 font-weight: 300;
 line-height: calc(40px * 1.5);
+padding-top: 65px;
 
 }
 
@@ -775,10 +775,11 @@ margin-bottom: 5px;
   right: 15px;
   bottom: 15px;
   z-index: 4;
-  background: #0078ff;
+  background: #586f6b;
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 20px 0px 20px 20px;
+  box-shadow: 1px 1px 2px #000000;
   transition: all 0.4s;
 
 }
@@ -786,17 +787,23 @@ margin-bottom: 5px;
 .back-to-top i {
 
   font-size: 28px;
-  color: #fff;
+  color: #FFFFFF;
   line-height: 0;
 
 }
 
 .back-to-top:hover {
 
-  background: #298eff;
-  color: #fff;
+  background: #FEE9F7;
+  color: #FFFFFF;
 
 }
+
+.back-to-top:hover i{
+
+  color: #000000;
+  
+  }
 
 .back-to-top.active {
 
@@ -966,6 +973,12 @@ background-color: transparent;
 border: none;
 
 } 
+
+div#services.container-fluid.dark-color-bg.h-100 {
+
+margin-top: -50px;
+
+}
 
 img.left-points {
 
