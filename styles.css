@@ -1019,11 +1019,26 @@ img.right-points {
 # Rates Section
 --------------------------------------------------------------*/
 
-#rates table.table {
+#rates div {
 
   background-color: transparent;
 
 }
+
+table#rate-table {
+
+  border-radius: 0px 0px 0px 0px;
+  padding: 20px;
+
+}
+
+.table {
+
+  border-radius: 0px 0px 0px 0px;
+  padding: 20px;
+
+}
+
 
 
 /*--------------------------------------------------------------
