@@ -223,9 +223,9 @@ firstFocusableElement.focus();
 */
 
 
-var myModal = document.getElementById('contactModal')
-var myInput = document.getElementById('contactInput')
+var contactModal = document.getElementById('contactModal')
+var recipientName = document.getElementById('recipient-name')
 
-myModal.addEventListener('shown.bs.modal', function () {
-  myInput.focus()
+contactModal.addEventListener('shown.bs.modal', function () {
+  recipientName.focus()
 })
