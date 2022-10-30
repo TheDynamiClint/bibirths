@@ -420,7 +420,7 @@
             
                 <div class="modal-header">
 
-                    <h5 class="modal-title" id="contactModalLabel">New message</h5>
+                    <h5 class="modal-title" id="contactModalLabel">Message for Alyx</h5>
 
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
@@ -428,27 +428,40 @@
 
             <div class="modal-body">
 
-                <form>
-                    <div class="mb-3">
+                <form action="contact.php" method="post" role="form" class="email-form"></form>
 
-                        <label for="recipient-name" class="col-form-label">Recipient:</label>
-                        <input type="text" class="form-control" id="recipient-name">
+                    <div class="form-group mb-3">
+
+                        <label for="sender-name" class="col-form-label">Your Name:</label>
+                        <input type="text" class="form-control" id="sender-name" required>
 
                     </div>
 
-                    <div class="mb-3">
+                    <div class="form-group mb-3">
+
+                        <label for="sender-email" class="col-form-label">Your Email:</label>
+                        <input type="email" class="form-control" name="email" id="email" required>
+
+                    </div>
+
+                    <div class="form-group mb-3">
 
                         <label for="message-text" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="message-text"></textarea>
+                        <textarea class="form-control" id="message-text" required></textarea>
 
                     </div>
+
                 </form>
             </div>
 
             <div class="modal-footer">
 
-              <button type="button" class="call-to-action" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="call-to-action-reverse">Send message</button>
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                <button type="button" class="call-to-action" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="call-to-action-reverse">Send message</button>
 
             </div>
 

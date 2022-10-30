@@ -948,7 +948,8 @@ body {
 
 }
 
-.call-to-action {
+.call-to-action,
+.call-to-action-reverse {
 
   width: 250px;
 
@@ -1140,6 +1141,58 @@ div.more-info span  {
 font-size: 40px;
 
 }
+
+/*--------------------------------------------------------------
+# Contact Modal
+--------------------------------------------------------------*/
+
+#contactModal {
+
+color:#000000;
+text-transform: uppercase;
+letter-spacing: 3px;
+
+}
+
+.modal-content {
+
+  background-color: #FCEEE3;
+
+}
+
+h5#contactModalLabel {
+
+  font-family: gravesend-sans, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 5px;
+
+}
+
+#contactModal .modal-content {
+
+  border: none;
+
+}
+
+#contactModal .modal-footer {
+
+  border-radius: 0px 20px 0px 20px;
+  background-color: #FDE5F3;
+  box-shadow: 1px 1px 2px #000000;
+  overflow: hidden;
+
+}
+
+#contactModal label {
+
+  background-color: transparent;
+
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Load Screen
