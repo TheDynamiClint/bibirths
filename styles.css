@@ -1190,9 +1190,18 @@ h5#contactModalLabel {
 
 }
 
+/* php form honeypot */
+.user-cannot-see {
 
+  display:none;
 
+} 
 
+.hidden {
+
+  display: none;
+  
+}
 
 /*--------------------------------------------------------------
 # Load Screen
@@ -1254,10 +1263,3 @@ h5#contactModalLabel {
   position: absolute;
 
 }
-
-/* php form honeypot */
-.user-cannot-see {
-
-  display:none;
-
-} 

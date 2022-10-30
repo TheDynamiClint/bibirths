@@ -428,7 +428,7 @@
 
             <div class="modal-body">
 
-                <form action="index.php" method="post" role="form" class="email-form"></form>
+                <form action="php/post.php" method="post" role="form" class="email-form"></form>
 
                     <div class="form-group mb-3">
 
@@ -446,8 +446,8 @@
 
                     <div class="form-group mb-3">
 
-                        <label for="subject" class="col-form-label">Message:</label>
-                        <textarea class="form-control" id="subject" required></textarea>
+                        <label for="subject" class="col-form-label">Subject:</label>
+                        <input type="text" class="form-control" id="subject" required></text>
 
                     </div>
 
@@ -465,18 +465,19 @@
 
                     </div>
 
-                </form>
             </div>
 
             <div class="modal-footer">
 
                 <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="error-message d-none"></div>
+                <div class="sent-message d-none">Your message has been sent. Thank you!</div>
 
                 <button type="button" class="call-to-action" data-bs-dismiss="modal">Close</button>
                 <button type="submit" class="call-to-action-reverse">Send message</button>
 
+                </form>
+            
             </div>
 
           </div>
@@ -488,7 +489,8 @@
     <!-- End Contact Modal -->
 
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/validate-form.js"></script>
 
 </body>
 
