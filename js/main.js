@@ -173,7 +173,6 @@
 * ADA Compliance/prevent tab out for modal
 */
 
-
 // add all the elements inside modal which you want to make focusable
 const  focusableElements =
 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
@@ -216,7 +215,11 @@ document.addEventListener('keydown', function(e) {
 
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+
 firstFocusableElement.focus();
+
+});
 
 /*
 * Bootstrap override for autofocus on modal
@@ -224,8 +227,8 @@ firstFocusableElement.focus();
 
 
 var contactModal = document.getElementById('contactModal')
-var recipientName = document.getElementById('recipient-name')
+var senderName = document.getElementById('sender-name')
 
 contactModal.addEventListener('shown.bs.modal', function () {
-  recipientName.focus()
+  senderName.focus()
 })
